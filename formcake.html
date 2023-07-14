@@ -1,0 +1,114 @@
+<html>
+<head>
+  <title>Online Cake Order Form</title>
+
+</head>
+<!--BODY -->
+<body bgcolor="#E29638" text="white">
+	<h1 align="center"><u> CAKE</u></h1>
+	<table align="center">
+		<tr>
+			<td valign="bottom"><img src="back1.jpg" width=100 height=100 style="border-radius: 15px; border: 5px solid black;"> </td>
+			<td valign="bottom"><img src="coc.jpg" width=150 height=150 style="border-radius: 15px; border: 5px solid black;"> </td>
+			<td valign="bottom"><img src="orange.jpg" width=200 height=180 style="border-radius: 15px; border: 5px solid black;"></td>
+			<td valign="bottom"><img src="ringceremony.jpg" width=250 height=210 style="border-radius: 15px; border: 5px solid black;"></td>
+		</tr>
+		<tr>
+			<td ><h3 align="center">Small Cake</h3></td>
+			<td><h3 align="center">Medium Cake</h3></td>
+			<td><h3 align="center">Large Cake</h3></td>
+			<td><h3 align="center">Family Cake</h3></td>
+		</tr>
+	</table>
+	
+	<!--DIV -->
+	<div style="width:80%; margin:auto;">
+	
+	<!--FORM -->
+    <form method="post" name="forms" action="#" >
+	
+	<!--PERSONAL INFORMATION -->
+          <fieldset>
+          <legend>Personal Information</legend>
+        <label>  First Name:</label> <input type="text" name="fname" size=25/>
+          <label>Last Name:</label> <input type="text" name="lname" size=25/>
+         <label>Mobile :</label> <input type="text" name="mobile" size=25 />
+		 <label>Address: <textarea col=70 rows=1 name="address"></textarea></label>
+         
+        </fieldset>
+		
+		
+		<!--ORDER DETAILS -->
+        <fieldset>
+          <legend>Order Details</legend>
+          <select name="size">
+            <option>Select Cake Size</option>
+            <option value="1">Small</option>
+            <option value="2">Medium</option>
+            <option value="3">Large</option>
+            <option value="4">Family</option>
+          </select>
+          <select name="Quantity" >
+		  <option >Select Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+          </select>
+		 <label>Delivery Date:</label><input type="date" name="date" />
+		  <label>Delivery Time:</label><input type="time" name="time" />
+		   <select name="payment">
+            <option>Select Payment Option</option>
+            <option value="1">Easy Paisa</option>
+            <option value="2">Mobicash</option>
+            <option value="3">Bank Transfer</option>
+            <option value="4">Cash on Delivery</option>
+          </select>
+        </fieldset>
+        
+		<!--CAKE -->
+        <fieldset>
+          <legend>Cake</legend>
+          <input type="radio" name="cheese" value="1" />Cocoa Cake
+          <input type="radio" name="cheese" value="2" />Lime Cake
+          <input type="radio" name="cheese" value="3" />Raspberry Cake
+		  <input type="radio" name="cheese" value="4" />Strawberry Cake
+		  <input type="radio" name="cheese" value="5" />Coconut Cake
+		  <input type="radio" name="cheese" value="6" />Orange Cake
+        </fieldset>
+		
+	
+		  <!--TOPINGS -->
+		  
+		   <fieldset>
+          <legend>Choose Toppings - <Rs class="500"> Each</legend>
+            <input type="checkbox" name="topping" value="1" />Black forest Cake
+            <input type="checkbox" name="topping" value="2" />Ice cake
+            <input type="checkbox" name="topping" value="4" />Angel Cake
+            <input type="checkbox" name="topping" value="5" />Birthday Cake
+            <input type="checkbox" name="topping" value="6" />Chocolate Cake
+            <input type="checkbox" name="topping" value="7" />Carrot Cake
+            <input type="checkbox" name="topping" value="8" /> Cupcake
+          
+        </fieldset>
+		
+		<!--SPECIAL INSTRUCTIONS -->
+		
+        <fieldset>
+          <legend>Special Instructions</legend>
+          <textarea name="instructions" rows="3" cols="42"></textarea>
+        </fieldset>
+		
+		<!--BUTTONS -->
+		
+        <input type="submit" value="PLACE YOUR ORDER" />
+        <input type="reset" value="CLEAR" />
+      </div>
+      
+       
+    
+  </form>
+  
+</body>
+
+</html>
